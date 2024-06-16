@@ -7,10 +7,75 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
+    <header class="judul">
         <h1>Website Konversi Suhu</h1>
     </header>
 
+    <h4>Masukkan Suhu Derajat Celcius (&deg;C) ke kotak dibawah, 
+        Lalu klik tombol konversi untuk mendapatkan hasil konversi dalam bentuk Fahrenheit (&deg;F)</h4>
+    <!-- Main Content -->
+    <main class="wrapper">
+        <!-- Section Celcius -->
+        <section class="celcius-container">
+            <header>
+                <h3>Celcius (&deg;C)</h3>
+            </header>
+
+            <section>
+                <textarea></textarea>
+            </section>
+
+            <section">
+                <button class="button red-color">Konversi</button>
+                <button class="button green-color">Reset</button>
+                <button class="button blue-color">Reverse</button>
+            </section>
+            
+        </section>
+
+        <section class="result-container">
+            <!-- Section Fahrenheit -->
+        <section>
+            <header>
+                <h3>Fahrenheit (&deg;F)</h3>
+            </header>
+
+            <section>
+                <textarea></textarea>
+            </section>
+
+        </section>
+        <!-- Section Calculate -->
+        <section>
+            <header>
+                <h3>Cara kalkulasi</h3>
+            </header>
+
+            <section>
+                <textarea></textarea>
+            </section>
+        </section>
+        </section>
+        </main>
+        <main class="cara">
+        <!-- Section Info -->
+        <section>
+            <header>
+                <h1>Cara Konversi dari Celcius (&deg;C) ke Fahrenheit (&deg;F)</h1>
+            </header>
+
+            <p>Suhu <span class="subject-info">S</span> dalam derajat Fahrenheit (&deg;F) sama dengan suhu 
+                <span class="subject-info">S</span> dalam derajat Celcius (&deg;C) kali 9/5 tambah 32</p>
+
+            <p>
+                <span class="subject-info">S</span> <sub>(&deg;F) </sub> = 
+                (<span class="subject-info">S</span> <sub>(&deg;C) </sub> x 1.8) + 32 <span class="warna"> Atau </span>
+                <span class="subject-info">S</span> <sub>(&deg;C) </sub> = 
+                (<span class="subject-info">S</span> <sub>(&deg;F) </sub> - 32) / 1.8
+            </p>
+
+        </section>
+    </main>
     <script src="js/script.js"></script>
 </body>
 </html>
