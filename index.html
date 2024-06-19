@@ -14,49 +14,28 @@
     <h4>Masukkan Suhu Derajat Celcius (&deg;C) ke kotak dibawah, 
         Lalu klik tombol konversi untuk mendapatkan hasil konversi dalam bentuk Fahrenheit (&deg;F)</h4>
     <!-- Main Content -->
-    <main class="wrapper">
-        <!-- Section Celcius -->
-        <section class="celcius-container">
-            <header>
-                <h3>Celcius (&deg;C)</h3>
-            </header>
-
-            <section>
-                <textarea></textarea>
-            </section>
-
-            <section">
-                <button class="button red-color">Konversi</button>
-                <button class="button green-color">Reset</button>
-                <button class="button blue-color">Reverse</button>
-            </section>
-            
-        </section>
-
-        <section class="result-container">
-            <!-- Section Fahrenheit -->
-        <section>
-            <header>
-                <h3>Fahrenheit (&deg;F)</h3>
-            </header>
-
-            <section>
-                <textarea></textarea>
-            </section>
-
-        </section>
-        <!-- Section Calculate -->
-        <section>
-            <header>
-                <h3>Cara kalkulasi</h3>
-            </header>
-
-            <section>
-                <textarea></textarea>
-            </section>
-        </section>
-        </section>
-        </main>
+    <main>
+        <div class="container">
+                <h1 class="judul">Konversi</h1>
+                <div class="input-box">
+                    <label for="celsius">Celsius (°C):</label>
+                    <input type="number" id="celsius" placeholder="Masukkan Celsius">
+                </div>
+                <div class="input-box">
+                    <label for="fahrenheit" >Fahrenheit (°F):</label>
+                    <input type="number" id="fahrenheit" placeholder="Masukkan Fahrenheit" disabled>
+                </div>
+                <div class="input-box">
+                    <label for="calculation">Cara Kalkulasi:</label>
+                    <input type="text" id="calculation" placeholder="Metode Kalkulasi" disabled>
+                </div>
+                <div class="button">
+                    <button onclick="convert()">Konversi</button>
+                    <button onclick="reset()">Reset</button>
+                    <button onclick="reverse()">Reverse</button>
+                </div>
+            </div>
+            </main>
         <main class="cara">
         <!-- Section Info -->
         <section>
@@ -76,6 +55,7 @@
 
         </section>
     </main>
-    <script src="js/script.js"></script>
+    <script src="js/script.js">
+    </script>
 </body>
 </html>
